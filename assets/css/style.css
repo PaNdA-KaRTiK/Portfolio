@@ -3,7 +3,7 @@
 :root{
     --header-height: 3rem;
 
-    --hue-color: 20;
+    --hue-color: 2;
 
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -23,8 +23,8 @@
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
-    --normal-font-size: .9rem;
-    --small-font-size: .8rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
      /* ===  FONT Weight  === */
@@ -55,11 +55,11 @@
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
         --small-font-size: .875rem;
-        --smaller-font-size: .8rem;
+        --smaller-font-size: .813rem;
     } 
 }
 
-
+ /* ===  BASE  === */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -366,6 +366,125 @@ img{
     display: flex;
     justify-content: center;
 }
+
+ /* ===  SKILLS  === */
+.skills__container{
+    row-gap: 0;
+}
+
+.skills__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+
+.skills__icon{
+    margin-right: var(--mb-0-75);
+}
+
+.skills__title{
+    font-size: var(--h3-font-size);
+}
+
+.skills__subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.skills__arrow{
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills__icon,
+.skills__arrow{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.skills__list{
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skills__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--font-medium);
+}
+
+.skills__name{
+    font-size: var(--normal-font-size);
+    font-weight: bold;
+}
+
+.skills__bar,
+.skills__percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__bar{
+    background-color: var(--first-color-lighter);
+}
+
+.skills__percentage{
+    display: block;
+    background-color: var(--first-color);
+}
+
+.skills__html{
+    width: 80%;
+}
+
+.skills__css{
+    width: 75%;
+}
+
+.skills__js{
+    width: 70%;
+}
+
+.skills__rn{
+    width: 85%;
+}
+
+.skills__java{
+    width: 80%;
+}
+
+.skills__python{
+    width: 70%;
+}
+
+.skills__git{
+    width: 90%;
+}
+
+.skills__sql{
+    width: 80%;
+}
+
+/* .skills__xyz{
+    width: 80%;
+} */
+
+.skills__close .skills__list{
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills__list{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow{
+    transform: rotate(180deg);
+}
+
+
 
  /* ==== QUALIFICATIONS  === */
 .qualification__tabs{
