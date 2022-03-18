@@ -422,6 +422,16 @@ img{
     margin-bottom: var(--font-medium);
 }
 
+.skills__titles--name{
+    display: flex;
+    align-items: center;
+}
+
+.skills--icon{
+    font-size: var(--h3-font-size);
+    color: var(--first-color-second);
+}
+
 .skills__name{
     font-size: var(--normal-font-size);
     font-weight: bold;
@@ -798,6 +808,7 @@ img{
     }
 
 }
+
 
 /* large devices */
 @media screen and (min-width: 1024px) {
