@@ -64,6 +64,17 @@ tabs.forEach(tab =>{
     })
 })
 
+const countEl = document.getElementById("count");
+countvisits();
+
+function countvisits() {
+fetch('https://api.countapi.xyz/update/kartik/panday/?amount=1')
+.then((res) => res.json())
+.then((res) => {
+    countEl.innerHTML = res.value;
+});
+      }
+
  /*===  SCROLL SECTIONS ACTIVE  === */
 const sections = document.querySelectorAll('section[id]')
 
