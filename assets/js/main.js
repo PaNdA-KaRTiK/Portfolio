@@ -68,12 +68,13 @@ const countEl = document.getElementById("count");
 countvisits();
 
 function countvisits() {
-fetch('https://api.countapi.xyz/update/kartik/panday/?amount=1')
-.then((res) => res.json())
-.then((res) => {
-    countEl.innerHTML = res.value;
-});
-      }
+    fetch('https://api.countapi.xyz/update/kartik/kumarpanday/?amount=1')
+    .then((res) => res.json())
+    .then((res) => {
+        countEl.innerHTML = res.value;
+    });
+    // https://api.countapi.xyz/update/panday/kartik/?amount=1
+}
 
  /*===  SCROLL SECTIONS ACTIVE  === */
 const sections = document.querySelectorAll('section[id]')
